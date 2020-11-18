@@ -3,13 +3,13 @@ let number = Math.floor(Math.random()*10);
 console.log(number);
 
 // 2.Using Random to get Dice Number between 1 to 6.
-let diceNumber = (Math.floor(Math.random()*10)%6)+1;
+let diceNumber = (Math.floor((Math.random()*10)%6))+1;
 console.log(diceNumber);
 
-// 3.Adding two Random Dice number and print the result.
-let diceNumber1 = (Math.floor(Math.random()*10)%6)+1;
+// 3. Adding two Random Dice number and print the result.
+let diceNumber1 = (Math.floor((Math.random()*10)%6))+1;
 console.log(diceNumber1);
-let diceNumber2 = (Math.floor(Math.random()*10)%6)+1;
+let diceNumber2 = (Math.floor((Math.random()*10)%6))+1;
 console.log(diceNumber2);
 console.log("Sum : "+(diceNumber1+diceNumber2));
 
