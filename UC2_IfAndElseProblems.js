@@ -2,7 +2,13 @@
 var numArray=[0,0,0,0,0];
 for(let i=0;i<5;i++)
 {
-   numArray[i]=Math.floor(Math.random()*1000);
+    while(true)
+    {
+        if(numArray[i]<100)
+        numArray[i]=Math.floor(Math.random()*1000);
+        else
+        break;
+    }
     console.log(numArray[i]);
 }
 //Find the minimum and the maximum value.
@@ -23,7 +29,7 @@ console.log("Smallest number : "+smallestNumber);
 console.log("Largest number : "+largestNumber);
 
 // 2. Find month and date range if it is between March 20 and June 20.
-var enteredDate=new Date();
+{var enteredDate=new Date();
 const prompt = require('prompt-sync')();
 //Taking input from user
 const year = prompt('Enter year: ')
@@ -39,7 +45,10 @@ if(enteredDate>date1 && enteredDate<date2)
 console.log("True");
 else
 console.log("False");
+}
 // 3. Check if the year is leap year
+var enteredDate=new Date();
+const prompt = require('prompt-sync')();
 const year = prompt('Enter year: ');   //User input
 if (year % 400 == 0)
 console.log("It's a Leap year");

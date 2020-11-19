@@ -44,8 +44,7 @@ console.log("Sunday");
 
 
 // 3. Display ones, tens, hundreds,... digits in a number
-
-let num=Number(prompt('Enter the number: '));
+num=Number(prompt('Enter the number: '));
 let arr =[];
 i=0;
 while(num!=0)
@@ -74,7 +73,7 @@ let a=Number(prompt("Enter first number:a= "));
 let b=Number(prompt("Enter second number:b= "));
 let c=Number(prompt("Enter third number:c= "));
 
-let arr =[];
+arr =[];
 arr[0]=a+b*c;
 arr[1]=c+a/b;
 arr[2]=a%b+c;
